@@ -84,15 +84,16 @@ GitHub: [erinspix](https://github.com/erinspix)
 Email: e.spix@yahoo.com
 
 - **Insomnia Tests**:
+USER ROUTE
  ![User Route](./Insomnia-images/user-routes.png)
-
+NEW FRIEND
  ![New Friend](./Insomnia-images/new-friend.png)
-
+THOUGHT ROUTE
  ![Thought Route](./Insomnia-images/thought-route.png)
-
+DELETE
  ![BALETED](./Insomnia-images/user-delete.png)
 
 
 
 Demo:
-[Watch demo video](./assets/readmegen_withsound.mp4)
+[Watch demo video]()
