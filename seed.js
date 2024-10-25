@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const User = require('./models/User');
 const Thought = require('./models/Thought');
 
+// Connect to MongoDB
+mongoose.connect('mongodb+srv://espix:Password1234@cluster0.wyjpt.mongodb.net/socialMedia_db?retryWrites=true&w=majority&appName=Cluster0', {
+
+});
+
 // Sample User Data
 const userSeeds = [
   {
@@ -35,10 +40,6 @@ const thoughtSeeds = [
 ];
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/socialnetworkDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
 
 // Seed the Database
 const seedDatabase = async () => {

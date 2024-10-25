@@ -77,6 +77,24 @@ const addReaction = async (req, res) => {
     res.status(500).json(err);
   }
 };
+// Remove a reaction
+const getReactionById = async (req, res) => {
+  try {
+    const thought = await Thought.findByIdAndUpdate(
+      req.params.thoughtId,
+      { $pull: { reactions: { reactionId: req.params.reactionId } } },
+      { new: true }
+    );
+    if (!thought) {
+      return res.status(404).json({ message: 'No thought found with that ID!' });
+    }
+    res.json(thought);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
+
 
 // Remove a reaction
 const removeReaction = async (req, res) => {
